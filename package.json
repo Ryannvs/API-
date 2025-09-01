@@ -1,0 +1,14 @@
+{
+  "name": "api-usuarios",
+  "version": "1.0.0",
+  "description": "primeira API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Victor Hugo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
