@@ -15,12 +15,13 @@ router.get('/', userController.getAllUsers);
 
 // //2° Rota para obter dados de um usuario por ID
 // //rota para obter é o id, e chamaria o metodo 
-// router.get('/:id', userController.getUserById);
+// rota padrão de usuários porém com ID que você quer consultar
+router.get('/:id', userController.getUserById);
 
 
 
 // //3° rota para criar um novo usuário
-// router.post('/', userController.createUser);
+router.post('/', userController.createUser);
 
 // exportanto o router 
 module.exports = router;
