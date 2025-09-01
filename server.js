@@ -1,7 +1,11 @@
 //Importar o módulo Express 
 const express = require('express');
 
+//Importar as rotas de usuário
+const userRoutes = require('./src/routes/userRoutes');
+
 //Criar uma aplicação express
+//Servidor web, recebendo requisições 
 const app = express();
 
 //Definir a porta do servidor que irá escutar
@@ -13,8 +17,13 @@ const porta = 8000;
             //req request
             //res é a (resposta) e é o objeto que o servidor usa para enviar os dados de volta para o cliente
 app.get('/', (req, res) => {
-    res.send("API funcionando");
+    res.send("API de usuários está funcionando");
 })
+
+//Usando as rotas de usuário
+//pra esse endereço eu quero centralizar 
+app.use('/api/users', userRoutes);
+
 
 //Inicia o servidor
 app.listen(porta, ()=> {
