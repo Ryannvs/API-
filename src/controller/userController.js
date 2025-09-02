@@ -12,10 +12,10 @@ const getAllUsers = (req, res) => {
 // Método do controlador para obter um usuario por id
 const getUserById = (req, res) => {
 
-    //Pegando o id que foi enviado na requisição 
-    //id sendo passado pelo req, parametro que manipula os dados que veio pela requisição
-    //res é a resposta da requisição 
-    //req.params.id | pegue o parametro id 
+    // Pegando o id que foi enviado na requisição 
+    // id sendo passado pelo req, parametro que manipula os dados que veio pela requisição
+    // res é a resposta da requisição 
+    // req.params.id | pegue o parametro id 
     const id = parseInt(req.params.id);
     
     //Chamando o método findById do userModel
